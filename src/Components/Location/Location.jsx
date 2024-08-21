@@ -21,22 +21,22 @@ const Location = () => {
           <div className="location_card1" data-aos="fade-left" data-aos-offset="-200">
             <h3 className="location_title"> Loyiha joylashuvi</h3>
             <p className="location_text">
-              Havas Premium turar-joy majmuasi Samarqand shahri Mirzo Ulugbyek koʻchasi 71-uyda joylashgan. Bu yerda yuqori klassga mansub xonadonlar sotiladi.
-            </p>
-            <p className="location_text">
-              Majmua yuqori sifatli qurilish materiallaridan tajribali quruvchilar tomonidan barpo etilmoqda. Hovlida bolalar maydonchasi, savdo doʻkonlari, dorixona va goʻzallik salonlari boʻladi.
+            Yaqinlar turar-joy majmuasi Qoʻqon shahri Zamondosh koʻchasi 28-uy manzilida qad rostlamoqda. Yon-atrofda maktab, bogʻcha, masjid va turli kafelar mavjud.
+
 
             </p>
             <p className="location_text">
-            Bu yerda yashash ajoyib, biznes bilan shug'ullanish esa qulay.
-            Transport infratuzilmasi shaharning istalgan nuqtasiga oson yetib borish imkonini beradi: siz faqat istagan va zarur yo'nalishingizni tanlasangiz kifoya.
+            Majmua shahar markaziga yaqin, rivojlangan infratuzilmaga ega hududda joylashgan. Loyihaning joylashgan oʻrni jamoat transporti va asosiy yoʻllarga yaqin boʻlib, bu har qanday joyga tez va oson yetib borish imkoniyatini beradi.
+
+            </p>
+            <p className="location_text">
+            Loyihada zamonaviy energiya samaradorlik tizimlari, xavfsizlik tizimlari va boshqa innovatsion texnologiyalar qoʻllangan. Bu nafaqat qulaylik, balki barqaror hayot tarzini ham taʼminlaydi.
             </p>
           </div>
           <div className="location_card2" data-aos="fade-left" data-aos-offset="-200">
             <p className="location_text2">
-              <span>Havas Premium</span> Siz va oilangiz uchun zarur boʻlgan barcha qulayliklarni 
-oʻzida jamlagan, shaharning yangi markaziga aylanadigan turar-joy 
-majmuasi!
+              <span>Yaqinlar</span>  - Oila bagʻrida tinch va totuv hayot kechirish uchun moʻljallangan 
+              uylar. Har bir rezident uchun eng qulay imkoniyatlar taqdim etamiz.
             </p>
           </div>
         </div>

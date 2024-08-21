@@ -14,6 +14,8 @@
         width: 45%;
 
         img {
+            border-top: 2px solid #eeeee5;
+            border-bottom: 2px solid #eeeee5;
             width: 100%;
             max-height: 500px;
             border-radius: 16px 0px 0px 16px;
@@ -22,6 +24,10 @@
             object-fit: cover;
             @include media(1200px) {
                 border-radius: 16px 16px 0px 0px;
+                border-top: 2px solid #eeeee5;
+                border-right: 1px solid #eeeee5;
+                border-left: 1px solid #eeeee5;
+                border-bottom: 0px solid #eeeee5;
             }
         }
 
@@ -163,22 +169,47 @@
         align-items: center;
         column-gap: 8px;
         color: #505050;
-
+    
         &_container {
             border-radius: 8px;
             overflow: hidden;
             height: 24px;
         }
+    
         input {
-            background-color: var(--brwn3);
+            background-color: var(--brwn3); /* Tekshirilmagan holat uchun fon rangi */
             width: 24px;
             height: 24px;
             border-radius: 8px;
-            border: 0px;
+            border: 1px solid #ccc; /* Bordurni tekshirilmagan holatda ko'rsatish */
             outline: none;
+            appearance: none; /* Default ko'rinishini olib tashlash */
+            -webkit-appearance: none; /* Safari uchun */
+            box-shadow: none; /* Qora soyani olib tashlash */
+            position: relative; /* Psevdoselektorni joylashtirish uchun */
+        }
+    
+        /* Tekshirilgan holatda */
+        input:checked {
+            background-color: white; /* Checked holatidagi fon rangi */
+            border-color: white; /* Bordur rangi */
+        }
+    
+        /* Check belgisini yaratish */
+        input:checked::after {
+            content: "";
+            position: absolute;
+            top: 4px;
+            left: 8px;
+            width: 5px;
+            // background-color: ;
+            height: 10px;
+            border: solid #505050;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg); /* Check belgisi */
         }
     }
-
+    
     button {
         background-color: white;
         padding: 12px 32px;

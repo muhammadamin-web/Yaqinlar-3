@@ -2,7 +2,6 @@
 import { useState } from "react";
 import form from "../../assets/images/6.png";
 
-
 const Send_form = () => {
   const [isChecked, setIsChecked] = useState(false);
   const [formData, setFormData] = useState({
@@ -43,7 +42,7 @@ const Send_form = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (!isChecked) {
-      alert('Iltimos, shaxsiy ma\'lumotlarimni qayta ishlashga rozilik bering.');
+      alert("Iltimos, shaxsiy ma'lumotlarimni qayta ishlashga rozilik bering.");
       return;
     }
 
@@ -72,7 +71,8 @@ const Send_form = () => {
             <div className="card_right_box">
               <h3 className="form_title">Mutaxassis bilan suhbat</h3>
               <p className="form_text">
-              Telefon raqamingizni qoldiring, mutaxassislarimiz tez orada siz bilan bogʻlanib, loyiha haqida batafsil maʼlumot berishadi.
+                Aloqa ma’lumotlaringizni qoldiring va menejerimiz loyiha haqida
+                ko’proq qiziqarli ma’lumotlar beradi
               </p>
               <div className="data_box">
                 <div className="data_box_name">
@@ -103,12 +103,22 @@ const Send_form = () => {
                 </div>
               </div>
               <div className="form_chekbox">
-               <div className="form_chekbox_container"> <input type="checkbox" name="" checked={isChecked} id="consent" onChange={(e) => setIsChecked(e.target.checked)}/></div>
+                <div className="form_chekbox_container">
+                  {" "}
+                  <input
+                    type="checkbox"
+                    name=""
+                    checked={isChecked}
+                    id="consent"
+                    onChange={(e) => setIsChecked(e.target.checked)}
+                  />
+                </div>
                 <p className="name_text">
-                Shaxsiy maʼlumotlarim qayta ishlanishiga roziman                </p>
+                  Shaxsiy maʼlumotlarim qayta ishlanishiga roziman{" "}
+                </p>
               </div>
               <button className="name_text" onClick={handleSubmit}>
-              Jo‘natish
+                Jo‘natish
               </button>
             </div>
           </div>

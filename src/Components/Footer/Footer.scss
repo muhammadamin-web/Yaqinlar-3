@@ -88,16 +88,17 @@
     &_card3 {
         margin-top: 8px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 10%;
-        width: 100%;
+        width: 80%;
         @include media(800px) {
             flex-direction: column;
-            row-gap: 32px;
+            width: 100%;
+            // row-gap: 32px;
             //     grid-column: span 2;
         }
         @include media(800px) {
-            row-gap: 16px;
+            // row-gap: 16px;
             //     grid-column: span 2;
         }
         &_text {

@@ -67,10 +67,12 @@ const Upcoming = ({ images }) => {
                           className="slidet_text"
                           key={`navimage${index + 1}`}
                         >
-                          Samarqanddagi birinchi premium toifadagi turar-joy majmuasi
+                          Ulkan orzularning kichik roʻyoblari 
+                          uchun tinch makon
                         </h3>
                         <p className="slidet_text2">
-                          Havas Premium — TXT Group kompaniyasi tomonidan Samarqand shahrida barpo etilayotgan ko’p qavatli turar-joy majmuasidir.
+                        Yaqinlar — TXT Group kompaniyasi tomonidan Qoʻqon shahrida barpo
+                        etilayotgan ko’p funksiyali turar-joy majmuasi.
                         </p>
                       </div>
                       <div className="upcoming_icon2_card">
@@ -84,7 +86,7 @@ const Upcoming = ({ images }) => {
                       <div className="upcoming_icons">
                         <div className="upcoming_icons_card">
                           <a href="#!" className="upcoming_icon">
-                            Jonli <br /> efir
+                            Live
                           </a>
 
                           <Link to="form"

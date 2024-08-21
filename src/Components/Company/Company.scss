@@ -157,7 +157,7 @@
         font-weight: 600;
         line-height: 56px;
         text-align: left;
-        color: var(--brwn2);
+        color: #005144;
         @include media(1200px) {
             font-size: 35px;
             line-height: 48px;
@@ -196,7 +196,7 @@
     &_card_img {
         width: 50%;
         position: relative;
-        order: +1;
+        order: -1;
         @include media(700px) {
             width: 100%;
             order: -1;
