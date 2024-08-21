@@ -39,9 +39,7 @@ const About = () => {
             <div className="about_map_text">
             
               <p className="about_map_text_text">
-                Samarqand markazidagi loyiha oʻzining hashamati bilan ajralib
-                turadi. Unda rezidentlar oʻzini shahar hayotining ajralmas qismi
-                sifatida tasavvur qiladi.
+              Qoʻqon shahrining musaffo havosi va dilkash insonlaridan ilhomlanilgan holda qurilayotgan loyiha uzoq yillar davomida xalqimizga munosib xizmat koʻrsatadi.
               </p>
               <p className="about_map_text_text2">Xaritada ko‘rish</p>
             </div>

@@ -19,8 +19,8 @@ const Blocks_location = () => {
             </div>
             <div className="blocks_location_map_text">
               <p className="blocks_location_map_text_text">
-                Havas Premium — zamonaviy va milliy uslubni birlashtirgan holda
-                Samarqandda qurilayotgan yangi uslubdagi turar-joy majmuasi.
+              Yaqinlar — anʼanaviy va yangicha uslubdagi arxitekturani oʻzida jamlagan holda qurilayotgan 
+              yangi makon.
               </p>
               {/* <p className="blocks_location_map_text_text2">Xaritada ko‘rish</p> */}
             </div>
