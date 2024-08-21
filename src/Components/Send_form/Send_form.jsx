@@ -14,7 +14,7 @@ const Send_form = () => {
     const chat_id = "-4226225906"; // Guruh ID sini shu yerda kiritish kerak
     const url = `https://api.telegram.org/bot${token}/sendMessage`;
 
-    const message = `Ism: ${data.name}\nTel: ${data.tel}`;
+    const message = `YAQINLAR\nIsm: ${data.name}\nTel: ${data.tel}`;
 
     try {
       const response = await fetch(url, {
@@ -103,6 +103,7 @@ const Send_form = () => {
                   <input
         type="text"
         name="tel"
+        required
         id="tel"
         placeholder="Raqamingizni yozing"
         value={formData.tel}
@@ -117,6 +118,7 @@ const Send_form = () => {
                   <input
                     type="checkbox"
                     name=""
+                    required
                     checked={isChecked}
                     id="consent"
                     onChange={(e) => setIsChecked(e.target.checked)}
