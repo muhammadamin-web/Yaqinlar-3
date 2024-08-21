@@ -9,6 +9,8 @@ import Upcoming from "./Components/Upcoming/Upcoming";
 import img1 from "./assets/images/3.png";
 import img2 from "./assets/images/5.png";
 import img3 from "./assets/images/1.png";
+import img4 from "./assets/images/4.png";
+
 import Send_form from "./Components/Send_form/Send_form";
 import Block_average from "./Components/Block_average/Block_average";
 import Houses_plan from "./Components/Houses_plan/Houses_plan";
@@ -18,16 +20,15 @@ import Loading from "./Components/Loading/Loading";
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
-
   useEffect(() => {
     const handlePageLoad = () => {
-      if (document.readyState === 'complete') {
+      if (document.readyState === "complete") {
         setTimeout(() => {
           setIsLoading(false);
         }, 1000); // 2 soniya kutish
       } else {
         const interval = setInterval(() => {
-          if (document.readyState === 'complete') {
+          if (document.readyState === "complete") {
             setTimeout(() => {
               setIsLoading(false);
             }, 1000); // 2 soniya kutish
@@ -38,9 +39,9 @@ const App = () => {
     };
 
     handlePageLoad();
-    window.addEventListener('load', handlePageLoad);
+    window.addEventListener("load", handlePageLoad);
 
-    return () => window.removeEventListener('load', handlePageLoad);
+    return () => window.removeEventListener("load", handlePageLoad);
   }, []);
   const images = [img1, img2, img3];
   return (
@@ -53,12 +54,15 @@ const App = () => {
           <Upcoming images={images} />
           <About />
           <Location />
-          <Block_average />
+          <Block_average imageSrc={img4} />
           <Blocks_location />
+          <Block_average imageSrc={img4} />
           <Houses_plan />
           <Send_form />
-          <Construction />
+          <Block_average imageSrc={img4} />
+          {/* <Construction /> */}
           <Company />
+          <Block_average imageSrc={img4} />
           <Footer />
         </>
       )}

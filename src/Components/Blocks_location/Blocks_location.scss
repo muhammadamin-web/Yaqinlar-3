@@ -1,7 +1,10 @@
 .blocks_location {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     height: auto;
+    @include media(1200px) {
+        margin-bottom: 86px;
 
+    }
     &_svg_box {
         width: 80px;
         height: 80px;
