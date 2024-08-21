@@ -46,7 +46,11 @@ const Send_form = () => {
       return;
     }
 
-    const response = await sendToTelegramBot(formData);
+    // Telefon raqamini formatlash
+    const formattedTel = formData.tel.replace(/\D/g, ''); // Faqat raqamlar
+    const finalTel = `+${formattedTel}`;
+
+    const response = await sendToTelegramBot({ ...formData, tel: finalTel });
     if (response && response.ok) {
       alert("Xabar yuborildi!");
 
@@ -59,6 +63,12 @@ const Send_form = () => {
     } else {
       alert("Xabar yuborishda xatolik yuz berdi");
     }
+  };
+
+  const handleTelInput = (e) => {
+    var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,2})(\d{0,3})(\d{0,2})(\d{0,2})/);
+    e.target.value = '+' + (x[1] ? x[1] + ' ' : '') + (x[2] ? '(' + x[2] + ')' : '') + (x[3] ? ' ' + x[3] : '') + (x[4] ? '-' + x[4] : '') + (x[5] ? '-' + x[5] : '');
+    setFormData({ ...formData, tel: e.target.value });
   };
   return (
     <form className="form" onSubmit={handleSubmit}>
@@ -91,15 +101,14 @@ const Send_form = () => {
                 <div className="data_box_name">
                   <p className="name_text">Telefon</p>
                   <input
-                    type="text"
-                    name="tel"
-                    id="tel"
-                    placeholder="Raqamingizni yozing"
-                    value={formData.tel}
-                    onChange={(e) =>
-                      setFormData({ ...formData, tel: e.target.value })
-                    }
-                  />
+        type="text"
+        name="tel"
+        id="tel"
+        placeholder="Raqamingizni yozing"
+        value={formData.tel}
+        onChange={handleTelInput}
+      />
+
                 </div>
               </div>
               <div className="form_chekbox">

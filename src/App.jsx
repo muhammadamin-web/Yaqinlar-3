@@ -10,6 +10,9 @@ import img1 from "./assets/images/3.png";
 import img2 from "./assets/images/5.png";
 import img3 from "./assets/images/1.png";
 import img4 from "./assets/images/4.png";
+import banner1 from "./assets/images/banner1.png";
+import banner2 from "./assets/images/banner2.png";
+import banner3 from "./assets/images/banner3.png";
 
 import Send_form from "./Components/Send_form/Send_form";
 import Block_average from "./Components/Block_average/Block_average";
@@ -56,13 +59,13 @@ const App = () => {
           <Location />
           <Block_average imageSrc={img4} />
           <Blocks_location />
-          <Block_average imageSrc={img4} />
+          <Block_average imageSrc={banner1} />
           <Houses_plan />
           <Send_form />
-          <Block_average imageSrc={img4} />
+          <Block_average imageSrc={banner2} />
           {/* <Construction /> */}
           <Company />
-          <Block_average imageSrc={img4} />
+          <Block_average imageSrc={banner3} />
           <Footer />
         </>
       )}
