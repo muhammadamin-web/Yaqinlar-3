@@ -1,6 +1,7 @@
 import { useState } from "react";
 import houses1 from "../../assets/images/house1.jpg";
 import houses11 from "../../assets/images/house11.jpg";
+import houses12 from "../../assets/images/house12.jpg";
 import houses2 from "../../assets/images/house2.jpg";
 import houses21 from "../../assets/images/house21.jpg";
 import houses22 from "../../assets/images/house22.jpg";
@@ -53,8 +54,8 @@ const Houses_plan = () => {
               <img src={houses1} alt="" className="houses_img" />
               <div className="houses_border"></div>
               <img src={houses11} alt="" className="houses_img" />
-              {/* <div className="houses_border"></div> */}
-              {/* <img src={universal} alt="" className="houses_img" /> */}
+              <div className="houses_border"></div> 
+             <img src={houses12} alt="" className="houses_img" /> 
             </div>
           )}
 
