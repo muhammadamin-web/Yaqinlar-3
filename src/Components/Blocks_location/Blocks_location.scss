@@ -1,8 +1,8 @@
 .blocks_location {
     margin-bottom: 150px;
     height: auto;
-    @include media(1200px) {
-        margin-bottom: 86px;
+    @include media(800px) {
+        margin-bottom: 16px;
 
     }
     &_svg_box {
@@ -61,6 +61,8 @@
         @include media(650px) {
             grid-template-columns: repeat(1, 100%);
             grid-template-rows: repeat(3, 0.5fr);
+            gap: 16px;
+
         }
     }
 
@@ -124,7 +126,10 @@
         }
         &_1 {
             margin-top: 8px;
-        }
+            @include media(650px) {
+                margin-top: 0px;
+
+            }        }
     }
 
     &_card_icons {
@@ -171,7 +176,7 @@
         @include media(650px) {
             width: 100%;
             margin-top: 0;
-            row-gap: 12px;
+            row-gap: 18px;
             flex-direction: column;
             column-gap: 0px;
         }

@@ -93,6 +93,8 @@
         @include media(650px) {
             grid-column: span 1;
             grid-row: 2;
+            margin-top: 0px;
+
         }
     }
 
@@ -110,6 +112,9 @@
         // @include media (1100px) {
         //     flex-wrap: wrap;
         // }
+        @include media (650px) {
+            row-gap: 18px;
+        }
     }
 
     &_icon_text {
